@@ -8,20 +8,9 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <style>
-            @font-face
+            body
             {
-                font-family: 'Aldrich';
-                src: url('/css/fonts/Aldrich-Regular.ttf') format('truetype');
-            }
-            .col-xs-4
-            {
-                border: 1px solid black;
-                text-align: center;
-                padding: 10px;
-                height: 225px;
-                color: white;
-                background: rgba(0, 0, 0, 0.75);
-                font-family: 'Aldrich',sans-serif;
+                background: rgba(0,0,0,0.08);
             }
             .footer
             {
@@ -33,18 +22,30 @@
                 height: auto;
                 padding: 5px;
             }
+            .col-lg-10
+            {
+                background-color: white;
+                height: 100%;
+                border: 3px solid black;
+            }
             .jumbotron
             {
-                color: white;
-                background: rgba(0, 0, 0, 0.75);
+                margin: 10px;
             }
-            #myModal
+            .col-xs-4
             {
-                color: black;
+                border: 1px solid black;
+                height: 270px;
+                padding: 5px;
+                text-align: center;
+            }
+            .container
+            {
+                margin-top: -15px;
             }
         </style>
     </head>
-    <body background="/images/outer-space-hd-wallpaper.jpg">
+    <body>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -67,8 +68,11 @@
                 </div>
             </div>
         </nav>
-        <div class="jumbotron text-center">
-            <h2>FUNDRAISING</h2>
+        <div class="container">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="jumbotron text-center">
+                    <h2>FUNDRAISING</h2>
             <p>An initiative to contribute back to your college.</p>
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">DONATE NOW</button>
             <div id="myModal" class="modal fade" role="dialog">
@@ -97,12 +101,15 @@
 
                 </div>
             </div>
-        </div>
-        <div class="row">
+                </div>
+                        <div class="row">
             <div class="col-xs-4"><h3>Why Giving Matters?</h3><p>The overall impact of your time,
                 talent and funds will obviously make a difference to our Alma mater. Your support will help us in overall infrastructure improvement, further faculty student initiatives and shaping the future of the current batches.</p></div>
             <div class="col-xs-4"><h3>What are You Supporting?</h3><p>By signing up, and being an active member of the page you're already a step ahead in helping the students. Any open internship or job opportunities that you can provide will be of tremendous help for us. Even a referral can do the trick. However, we also encourage you to support us with funds as we need money for the running of the alumni association, proper functioning of our Placement and Entreprenuership Cell.</p></div>
             <div class="col-xs-4"><h3>Utilisation of Your Fund</h3><p>Once you have donated any amount to us, we will confirm your payment. Upon utilisation/usage of any part of your donation, we will submit you a report of where your money was used.</p></div>
+        </div>
+            </div>
+            <div class="col-lg-1"></div>
         </div>
         <div class="footer">
             <h6>© 2019 Department of Computer Science and Engineering, University of Calcutta</h6>
