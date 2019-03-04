@@ -20,38 +20,17 @@
                 position: absolute;
                 bottom: 0;
             }
-            .col-lg-6
+            .container 
             {
-                margin: 5px;
-                border-radius: 5px;
-                background: rgba(232, 232, 232, 1);
-            }
-            .image
-            {
-                position: relative;
                 text-align: center;
-                color: white;
             }
-            .centered {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 75px;
-                }
             img
             {
-                margin-top: 10px;
-                border-radius: 5px;
-            }
-            .form
-            {
                 margin: 20px;
-                padding: 20px;
             }
         </style>
     </head>
-    <body background="images/login_background.png">
+    <body style="background-image: image()">
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -67,43 +46,22 @@
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="post.html">Jobs/Internships</a></li>
                         <li><a href="fundraising.html">Donations </a></li>
-                        <li><a href="chapters.html">Alumni Chapters</a></li>
+                        <li class="active" ><a href="chapters.html">Alumni Chapters</a></li>
                         <li><a href="team.html">Meet the Team</a></li>
                         <li><a href="contact.html">Contact Us!</a></li>
                         <li><a href="http://www.reflexons.cucse.org" target="_blank">RefleXons 2019</a></li>
                         <li><a href="http://www.caluniv.ac.in/academic/department/Compsc.html" target="_blank">CUCSE Website</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="login.html" title="Sign Up or Login" data-content="Hey"><span class="glyphicon glyphicon-user"></span>&nbsp;Log In/Register</a></li>
+                    <li><a href="login.html" title="Sign Up or Login" data-content="Hey"><span class="glyphicon glyphicon-user"></span>&nbsp;Log In/Register</a></li>
                 </ul>
                 </div>
             </div>
         </nav>
         <div class="container">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-6">
-                <div class="image">
-                    <img style='height: 100%; width: 100%; object-fit: contain' src="images/bg-01.jpg">
-                    <div class="centered"><b>LOG IN</b></div>
-                </div>
-                <div class="form">
-                    <form action="/action_page.php">
-  <div class="form-group">
-    <label for="email">Email address:</label>
-    <input type="email" class="form-control" id="email">
-  </div>
-  <div class="form-group">
-    <label for="pwd">Password:</label>
-    <input type="password" class="form-control" id="pwd">
-  </div>
-  <div class="checkbox">
-    <label><input type="checkbox"> Remember me</label>
-  </div>
-  <button type="submit" class="btn btn-success">Submit</button>
-</form>
-                </div>
-            </div>
-            <div class="col-lg-3"></div>
+            <img src="images/kids-under-construction-clipart-free-clip-art-images.gif">
+            <div class="jumbotron"><h3>Please return to our <a href="/index.html">Home</a> page.<br> This tab is under development .<br>
+                Thank You.</h3></div>
         </div>
         <div class="footer">
             <h6>© 2019 Department of Computer Science and Engineering, University of Calcutta</h6>

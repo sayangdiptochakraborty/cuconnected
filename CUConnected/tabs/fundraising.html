@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
         <style>
             .footer
             {
@@ -19,32 +20,64 @@
                 padding: 5px;
                 
             }
-            .col-lg-10
-            {
-                background-color: white;
-                height: 100%;
-                border: 1px solid black;
-                border-radius: 10px;
-            }
-            .jumbotron
-            {
-                margin: 10px;
-            }
-            .col-xs-4
-            {
-                border: 0.5px solid black;
-                height: 270px;
-                padding: 5px;
-                text-align: center;
-                border-radius: 5px;
-            }
             .container
             {
                 margin-top: -15px;
             }
+            .donate
+            {
+                position: relative;
+            }
+            .donate img
+            {
+                max-height: 100%;
+                max-width: 100%;
+                border-radius: 0.5rem;   
+            }
+            .container img
+            {
+                background: #FAFAFA;
+            }
+            .card {
+                /* Add shadows to create the "card" effect */
+                box-shadow: 0 16px 32px 0 rgba(0,0,0,0.9);
+                transition: 0.3s;
+                padding: 5px;
+                width: 400px;
+                height: 159px;
+                text-align: center;
+                border-radius: 1rem;
+                position: absolute;
+                top: 27%;
+                left: 32%;
+                background: #CFD8DC;
+                margin: auto;
+            }
+
+            /* On mouse-over, add a deeper shadow */
+            .card:hover {
+                box-shadow: 0 32px 64px 0 rgba(0,0,0,0.9);
+            }
+            .col-sm-4
+            {
+                border-right: 1px solid black;
+                height: 200px;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background: #F0F0F0;
+            }
+            .col-sm-3
+            {
+                height: 200px;
+                text-align: center;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background: #F0F0F0;
+            }
         </style>
     </head>
-    <body background="images/fundraising_background.jpg">
+    <body>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
                 <div class="navbar-header">
@@ -60,7 +93,7 @@
                         <li><a href="/index.html">Home</a></li>
                         <li><a href="post.html">Jobs/Internships</a></li>
                         <li class="active"><a href="fundraising.html">Donations </a></li>
-                        <li><a>Alumni Chapters</a></li>
+                        <li><a href="chapters.html">Alumni Chapters</a></li>
                         <li><a href="team.html">Meet the Team</a></li>
                         <li><a href="contact.html">Contact Us!</a></li>
                         <li><a href="http://www.reflexons.cucse.org" target="_blank">RefleXons 2019</a></li>
@@ -73,9 +106,10 @@
             </div>
         </nav>
         <div class="container">
-            <div class="col-lg-1"></div>
-            <div class="col-lg-10">
-                <div class="jumbotron text-center">
+            <div class="donate">
+                <img src="images/slider1.jpg">
+                <div class="card">
+                    <div class=" text-center">
                     <h2>FUNDRAISING</h2>
             <p>An initiative to contribute back to your college.</p>
             <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">DONATE NOW</button>
@@ -104,16 +138,21 @@
                     </div>
 
                 </div>
-            </div>
                 </div>
-                        <div class="row">
-            <div class="col-xs-4"><h3>Why Giving Matters?</h3><p>The overall impact of your time,
-                talent and funds will obviously make a difference to our Alma mater. Your support will help us in overall infrastructure improvement, further faculty student initiatives and shaping the future of the current batches.</p></div>
-            <div class="col-xs-4"><h3>What are You Supporting?</h3><p>By signing up, and being an active member of the page you're already a step ahead in helping the students. Any open internship or job opportunities that you can provide will be of tremendous help for us. Even a referral can do the trick. However, we also encourage you to support us with funds as we need money for the running of the alumni association, proper functioning of our Placement and Entreprenuership Cell.</p></div>
-            <div class="col-xs-4"><h3>Utilisation of Your Fund</h3><p>Once you have donated any amount to us, we will confirm your payment. Upon utilisation/usage of any part of your donation, we will submit you a report of where your money was used.</p></div>
-        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3" style="
+                                         border-right: 1px solid black">
+                <h3>Why Giving Matters?</h3><p>The overall impact of your time,
+                talent and funds will obviously make a difference to our Alma mater. Your support will help us in overall infrastructure improvement, further faculty student initiatives and shaping the future of the current batches.</p>
+            </div>
+            <div class="col-sm-4"><h3>What are You Supporting?</h3><p>By signing up, and being an active member of the page you're already a step ahead in helping the students. Any open internship or job opportunities that you can provide will be of tremendous help for us. Even a referral can do the trick. However, we also encourage you to support us with funds as we need money for the running of the alumni association, proper functioning of our Placement and Entreprenuership Cell.</p></div>
+            <div class="col-sm-3"><h3>Utilisation of Your Fund</h3><p>Once you have donated any amount to us, we will confirm your payment. Upon utilisation/usage of any part of your donation, we will submit you a report of where your money was used.</p></div>
+             <div class="col-sm-1"></div>
         </div>
         <div class="footer">
             <h6>© 2019 Department of Computer Science and Engineering, University of Calcutta</h6>
