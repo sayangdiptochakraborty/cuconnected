@@ -151,6 +151,21 @@ section .section-title {
             {
                 margin: 10px;
             }
+            @media (min-width: 768px) and (max-width: 1250px)
+            {
+                .navbar-collapse.collapse {
+                    display: none !important;
+                }
+                .navbar-collapse.collapse.in {
+                    display: block !important;
+                }
+                .navbar-header .collapse, .navbar-toggle {
+                    display:block !important;
+                }
+                .navbar-header {
+                    float:none;
+                }
+            }
         </style>
     </head>
     <body style="background: #eee">

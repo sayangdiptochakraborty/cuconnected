@@ -18,7 +18,8 @@
                 width: 100%;
                 height: auto;
                 padding: 5px;
-                
+                position: relative;
+                bottom: 0;
             }
             .container
             {
@@ -48,10 +49,10 @@
                 text-align: center;
                 border-radius: 1rem;
                 position: absolute;
-                top: 27%;
-                left: 32%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 background: #CFD8DC;
-                margin: auto;
             }
 
             /* On mouse-over, add a deeper shadow */
@@ -74,6 +75,32 @@
                 margin-top: 10px;
                 margin-bottom: 10px;
                 background: #F0F0F0;
+            }
+            @media (min-width: 768px) and (max-width: 1250px)
+            {
+                .navbar-collapse.collapse {
+                    display: none !important;
+                }
+                .navbar-collapse.collapse.in {
+                    display: block !important;
+                }
+                .navbar-header .collapse, .navbar-toggle {
+                    display:block !important;
+                }
+                .navbar-header {
+                    float:none;
+                }
+            }
+            @media (max-width:720px)
+            {
+                .col-sm-4
+                {
+                    padding-top: 20px;
+                }
+                .col-sm-3
+                {
+                    padding-top: 20px;
+                }
             }
         </style>
     </head>

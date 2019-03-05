@@ -17,7 +17,7 @@
                 width: 100%;
                 height: auto;
                 padding: 5px;
-                position: absolute;
+                position:fixed;
                 bottom: 0;
             }
             .col-lg-6
@@ -48,6 +48,28 @@
             {
                 margin: 20px;
                 padding: 20px;
+            }
+            @media (min-width: 768px) and (max-width: 1250px)
+            {
+                .navbar-collapse.collapse {
+                    display: none !important;
+                }
+                .navbar-collapse.collapse.in {
+                    display: block !important;
+                }
+                .navbar-header .collapse, .navbar-toggle {
+                    display:block !important;
+                }
+                .navbar-header {
+                    float:none;
+                }
+            }
+            @media  (max-width: 720px)
+            {
+                .centred
+                {
+                    font-size: 40px;
+                }
             }
         </style>
     </head>
